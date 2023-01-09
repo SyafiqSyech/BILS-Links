@@ -13,42 +13,45 @@
             <div class="header_box">
                 <div class="logo_box">
                     <img id="logo" src="img/Bil's Coffee Logo.png" alt="logo">
-                    <p>C I B I S 9</p>
+                    <div class="info_box">
+                        <div class="info" onclick="info()"><p>?</p></div>
+                    </div>
+                    <p class="loc">C I B I S 9</p>
                     <div class="link_box">
                         <a href="https://gofood.link/u/GGqjd" class="link" target=”_blank”>
                             <div class="link_img"  style="background-image: url(img/gojek.svg);"></div>
-                            <!-- <h2 class="link_text">Gojek</h2> -->
+                            <h2 class="link_text">Gojek</h2>
                         </a>
                         <a href="https://drive.google.com/file/d/1c1PZNGjfh61WQmXRuFVqc0iz4Gt8KmJx/view?usp=sharing" class="link" target=”_blank”>
                             <div class="link_img"  style="background-image: url(img/menu.svg);"></div>
-                            <!-- <h2 class="link_text">Menu</h2> -->
+                            <h2 class="link_text">Menu</h2>
                         </a>
                         <a href="https://wa.me/+6281317436103" class="link" target=”_blank”>
                             <div class="link_img"  style="background-image: url(img/whatsapp.svg);"></div>
-                            <!-- <h2 class="link_text">Whatsapp</h2> -->
+                            <h2 class="link_text">Whatsapp</h2>
                         </a>
                         <a href="https://maps.app.goo.gl/EZqvijVeLPvrXDgi9?g_st=ic" class="link" target=”_blank”>
                             <div class="link_img"  style="background-image: url(img/marker.svg);"></div>
-                            <!-- <h2 class="link_text">Location</h2> -->
+                            <h2 class="link_text">Location</h2>
                         </a>
                     </div>
-                    <p>K E M A N G</p>
+                    <p class="loc" style="margin-top: 30px;">K E M A N G</p>
                     <div class="link_box">
                         <a href="https://gofood.link/a/F6W8b8f" class="link" target=”_blank”>
                             <div class="link_img"  style="background-image: url(img/gojek.svg);"></div>
-                            <!-- <h2 class="link_text">Gojek</h2> -->
+                            <h2 class="link_text">Gojek</h2>
                         </a>
                         <a href="https://drive.google.com/file/d/1sV0z_NEPfEKf_3HuKugo7NfbhQnsH3X1/view?usp=sharing" class="link" target=”_blank”>
                             <div class="link_img"  style="background-image: url(img/menu.svg);"></div>
-                            <!-- <h2 class="link_text">Menu</h2> -->
+                            <h2 class="link_text">Menu</h2>
                         </a>
                         <a href="https://wa.me/+6287789083706" class="link" target=”_blank”>
                             <div class="link_img"  style="background-image: url(img/whatsapp.svg);"></div>
-                            <!-- <h2 class="link_text">Whatsapp</h2> -->
+                            <h2 class="link_text">Whatsapp</h2>
                         </a>
                         <a href="https://maps.app.goo.gl/pw7AoNWmzR8qjbFy8?g_st=ic" class="link" target=”_blank”>
                             <div class="link_img"  style="background-image: url(img/marker.svg);"></div>
-                            <!-- <h2 class="link_text">Location</h2> -->
+                            <h2 class="link_text">Location</h2>
                         </a>
                     </div>
                 </div>
@@ -78,6 +81,16 @@
                 function copy(){
                     navigator.clipboard.writeText("bilskopi@gmail.com");
                     alert("\"bilskopi@gmail.com\" Email Copied!");
+                }
+
+                function info(){
+                    console.log("yes");
+                    
+                    const texts = document.querySelectorAll('.link_text');
+
+                    texts.forEach(text => {
+                        text.classList.toggle("link_text_toggle");
+                    });
                 }
             }
         </script>

@@ -42,8 +42,7 @@ header{
     width: unset;
 }
 
-.header_box p{
-    margin-top: 30px;
+.loc{
     margin-bottom: 10px;
     font-weight: 300;
     font-size: 24px;
@@ -68,7 +67,7 @@ header{
 .link{
     margin: auto;
     text-align: center;
-    width: 50px;
+    width: 60px;
 }
 
 .link_img{
@@ -80,13 +79,41 @@ header{
     background-color: black;
     background-position: center;
     border-radius: 100px;
+    margin-bottom: 2px;
 }
 
 .link_text{
-    margin-top: 2px;
-    font-size: 10px;
+    height: 0;
+    font-size: 12px;
     font-weight: 400;
     font-family: 'Courier New', Courier, monospace;
+    display: none;
+}
+
+.link_text_toggle{
+    display: block !important;
+}
+
+.info_box{
+    height: 8px;
+}
+
+.info{
+    margin-top: 22px;
+    margin-left: auto;
+    cursor: pointer;
+    border: 2px solid lightgray;
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+}
+
+.info p{
+    text-align: center;
+    padding-top: 2px;
+    font-size: 14px;
+    font-weight: 400;
+    color: lightgray;
 }
 
 
@@ -107,7 +134,7 @@ footer{
 
 .contact_title{
     color: white;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .contact_name{
