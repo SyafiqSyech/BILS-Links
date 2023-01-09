@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700');
+
+*{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    height: 100vh;
+}
+
+.box{
+    height: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+footer{
+    background-color: black;
+}
+
+header, footer{
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+
+
+header{
+    font-family: 'Josefin Sans', sans-serif;
+    display: grid;
+    align-content: center;
+}
+
+.header_box{
+    margin: auto;
+    width: unset;
+}
+
+.header_box p{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+    word-spacing: 18px;
+    letter-spacing: 0;
+}
+
+.logo_box{
+    width: 275px;
+    text-align: center;
+}
+
+#logo{
+    width: 100%;
+}
+
+.link_box{
+    display: flex;
+}
+
+.link{
+    margin: auto;
+    text-align: center;
+    width: 50px;
+}
+
+.link_img{
+    margin: auto;
+    width: 41px;
+    height: 41px;
+    background-size: 23px;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    border-radius: 100px;
+}
+
+.link_text{
+    margin-top: 2px;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+footer{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+}
+
+.footer_box{
+    margin: 0 4%;
+    padding-top: 30px;
+}
+
+.contact_box{
+    text-align: right;
+}
+
+.contact_title{
+    color: white;
+    font-size: 32px;
+}
+
+.contact_name{
+    margin-top: 30px;
+    color: white;
+    font-size: 14px;
+}
+
+.contact{
+    color: white;
+    font-size: 18px;
+}
