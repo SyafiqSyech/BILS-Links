@@ -43,12 +43,11 @@ header{
 }
 
 .loc{
-    margin-bottom: 10px;
     font-weight: 300;
     font-size: 24px;
-    text-align: center;
     word-spacing: 18px;
     letter-spacing: 0;
+    margin-bottom: 10px;
 }
 
 .logo_box{
@@ -92,10 +91,6 @@ header{
 
 .link_text_toggle{
     display: block !important;
-}
-
-.info_box{
-    height: 8px;
 }
 
 .info{
