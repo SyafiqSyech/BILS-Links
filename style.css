@@ -120,11 +120,13 @@ header{
 footer{
     font-family: 'Courier New', Courier, monospace;
     background-color: black;
-    display: grid;
-    align-content: center;
 }
 
 .footer_box{
+    position: fixed;
+    z-index: 10;
+    top: 30px;
+    right: 0;
     margin: 0 4%;
 }
 
