@@ -136,7 +136,7 @@ footer{
 #contact_title{
     color: white;
     font-size: 28px;
-    transition-delay: 0s !important;
+    transition-delay: 0.2s !important;
 }
 
 #contact_name{
@@ -151,17 +151,18 @@ footer{
 }
 
 .text{
-    transition: all 0.6s ease-out;
+    transition: all 0.4s ease-out;
 }
 
 .text_hid{
     opacity: 0;
     transform: translateX(-20px);
+    transition: all 0.2s ease-out 0s !important;
 }
 
 .text:nth-child(1){
-    transition-delay: 0.2s;
+    transition-delay: 0.4s;
 }
 .text:nth-child(2){
-    transition-delay: 0.4s;
+    transition-delay: 0.6s;
 }
