@@ -58,7 +58,7 @@
         </header>
         <footer>
             <div class="footer_box">
-                <div class="contact_box">
+                <div class="contact_box" id="contactBox">
                     <h1 class="text text_hid" id="contact_title">C O N T A C T S</h1>
                     <a href="https://www.instagram.com/bilscoffee/?hl=en" target="_blank">
                         <p class="text text_hid" id="contact_name">INSTAGRAM</p>
@@ -94,22 +94,22 @@
                 
                 var boxs = document.getElementById("boxs");
                 var logo = document.getElementById("logo");
-                var logobox = document.getElementById("logoBox");
+                var logoBox = document.getElementById("logoBox");
+                var contactBox = document.getElementById("contactBox");
                 var contactText = document.getElementsByClassName("text");
 
                 box.addEventListener("scroll", function() {
                     logo.style.transform = "rotate("+box.scrollTop/8+"deg)";
-                    logobox.style.transform = "translateY("+box.scrollTop/3+"px)";
+                    logoBox.style.transform = "translateY("+box.scrollTop/3+"px)";
                     var op = ((box.scrollTop-500)*-1)/500;
-                    var bl = box.scrollTop*3/500;
-                    logobox.style.opacity = op;
-                    // logobox.style.filter = "blur("+bl+"px)";
-                    if (box.scrollHeight - box.offsetHeight - 150 <= box.scrollTop){
+                    var max = box.scrollHeight - box.offsetHeight;
+                    logoBox.style.opacity = op;
+                    contactBox.style.transform = "translateY("+(box.scrollTop-max+30)+"px)";
+                    if (max - 150 <= box.scrollTop){
                         for (let i = 0; i < contactText.length; i++) {
                             contactText[i].classList = "text";
                         }
-                    }
-                    else{
+                    }else{
                         for (let i = 0; i < contactText.length; i++) {
                             contactText[i].classList = "text text_hid";
                         }

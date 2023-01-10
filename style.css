@@ -32,6 +32,7 @@ header, footer{
 
 
 header{
+    background-color: white;
     font-family: 'Josefin Sans', sans-serif;
     display: grid;
     align-content: center;
@@ -120,13 +121,10 @@ header{
 footer{
     font-family: 'Courier New', Courier, monospace;
     background-color: black;
+    overflow: hidden;
 }
 
 .footer_box{
-    position: fixed;
-    z-index: 10;
-    top: 30px;
-    right: 0;
     margin: 0 4%;
 }
 
