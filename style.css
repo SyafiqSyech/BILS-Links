@@ -26,7 +26,7 @@ footer{
 
 header, footer{
     height: 100vh;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
 }
 
 
@@ -48,6 +48,10 @@ header{
     word-spacing: 18px;
     letter-spacing: 0;
     margin-bottom: 10px;
+}
+
+.loc:nth-child(1){
+    transition-delay: 0.2s;
 }
 
 .logo_box{
@@ -116,29 +120,47 @@ header{
 footer{
     font-family: 'Courier New', Courier, monospace;
     background-color: black;
+    display: grid;
+    align-content: center;
 }
 
 .footer_box{
     margin: 0 4%;
-    padding-top: 30px;
 }
 
 .contact_box{
     text-align: right;
 }
 
-.contact_title{
+#contact_title{
     color: white;
     font-size: 28px;
+    transition-delay: 0s !important;
 }
 
-.contact_name{
+#contact_name{
     margin-top: 30px;
     color: white;
     font-size: 14px;
 }
 
-.contact{
+#contact{
     color: white;
     font-size: 18px;
+}
+
+.text{
+    transition: all 0.6s ease-out;
+}
+
+.text_hid{
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.text:nth-child(1){
+    transition-delay: 0.2s;
+}
+.text:nth-child(2){
+    transition-delay: 0.4s;
 }
