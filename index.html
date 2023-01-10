@@ -92,18 +92,18 @@
                     });
                 }
                 
-                var boxs = document.getElementById("boxs");
+                var box = document.getElementById("box");
                 var logo = document.getElementById("logo");
                 var logoBox = document.getElementById("logoBox");
                 var contactBox = document.getElementById("contactBox");
                 var contactText = document.getElementsByClassName("text");
 
                 box.addEventListener("scroll", function() {
-                    logo.style.transform = "rotate("+box.scrollTop/8+"deg)";
-                    logoBox.style.transform = "translateY("+box.scrollTop/3+"px)";
-                    var op = ((box.scrollTop-500)*-1)/500;
+                    logo.style.transform = "rotate("+box.scrollTop/8*-1+"deg)";
+                    logoBox.style.transform = "translateY("+box.scrollTop/2+"px)";
+                    // var op = ((box.scrollTop-500)*-1)/500;
+                    // logoBox.style.opacity = op;
                     var max = box.scrollHeight - box.offsetHeight;
-                    logoBox.style.opacity = op;
                     contactBox.style.transform = "translateY("+(box.scrollTop-max+30)+"px)";
                     if (max - 150 <= box.scrollTop){
                         for (let i = 0; i < contactText.length; i++) {
