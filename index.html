@@ -11,6 +11,8 @@
 <body>
     <div class="box" id="box">
         <header>
+            <div class="pattern_box" id="patternBox">
+            </div>
             <div class="header_box">
                 <div class="logo_box" id="logoBox">
                     <img id="logo" src="img/Bil's Coffee Logo.png" alt="logo">
@@ -75,48 +77,12 @@
                 </div>
             </div>
         </footer>
+        <script src="java.js"></script>
         <script>
             {
-                function copy(){
-                    navigator.clipboard.writeText("bilskopi@gmail.com");
-                    alert("\"bilskopi@gmail.com\" Email Copied!");
-                }
-
-                function info(){
-                    console.log("yes");
-                    
-                    const texts = document.querySelectorAll('.link_text');
-
-                    texts.forEach(text => {
-                        text.classList.toggle("link_text_toggle");
-                    });
-                }
-                
-                var box = document.getElementById("box");
-                var logo = document.getElementById("logo");
-                var logoBox = document.getElementById("logoBox");
-                var contactBox = document.getElementById("contactBox");
-                var contactText = document.getElementsByClassName("text");
-
-                box.addEventListener("scroll", function() {
-                    logo.style.transform = "rotate("+box.scrollTop/8*-1+"deg)";
-                    logoBox.style.transform = "translateY("+box.scrollTop/2+"px)";
-                    // var op = ((box.scrollTop-500)*-1)/500;
-                    // logoBox.style.opacity = op;
-                    var max = box.scrollHeight - box.offsetHeight;
-                    contactBox.style.transform = "translateY("+(box.scrollTop-max+30)+"px)";
-                    if (max - 150 <= box.scrollTop){
-                        for (let i = 0; i < contactText.length; i++) {
-                            contactText[i].classList = "text";
-                        }
-                    }else{
-                        for (let i = 0; i < contactText.length; i++) {
-                            contactText[i].classList = "text text_hid";
-                        }
-                    }
-                });
+                background();
             }
         </script>
-    </div>
+        </div>
 </body>
 </html>
