@@ -64,10 +64,10 @@
                         <p class="text text_hid" id="contact_name">INSTAGRAM</p>
                         <p class="text text_hid" id="contact">@BILSCOFFEE</p>
                     </a>
-                    <div onclick="copy()" style="cursor: pointer;">
+                    <a href="mailto:bilskopi@gmail.com" target="_blank">
                         <p class="text text_hid" id="contact_name">EMAIL</p>
                         <p class="text text_hid" id="contact">BILSKOPI@GMAIL.COM</p>
-                    </div>
+                    </a>
                     <a href="https://www.facebook.com/bilscoffee/" target="_blank">
                         <p class="text text_hid" id="contact_name">FACEBOOK</p>
                         <p class="text text_hid" id="contact">BIL'S COFFEE</p>
@@ -77,32 +77,18 @@
         </footer>
         <script>
             {
-                function copy(){
-                    navigator.clipboard.writeText("bilskopi@gmail.com");
-                    alert("\"bilskopi@gmail.com\" Email Copied!");
-                }
-
                 function info(){
-                    console.log("yes");
-                    
                     const texts = document.querySelectorAll('.link_text');
-
                     texts.forEach(text => {
                         text.classList.toggle("link_text_toggle");
                     });
                 }
                 
-                var box = document.getElementById("box");
-                var logo = document.getElementById("logo");
-                var logoBox = document.getElementById("logoBox");
-                var contactBox = document.getElementById("contactBox");
                 var contactText = document.getElementsByClassName("text");
 
                 box.addEventListener("scroll", function() {
                     logo.style.transform = "rotate("+box.scrollTop/8*-1+"deg)";
                     logoBox.style.transform = "translateY("+box.scrollTop/2+"px)";
-                    // var op = ((box.scrollTop-500)*-1)/500;
-                    // logoBox.style.opacity = op;
                     var max = box.scrollHeight - box.offsetHeight;
                     contactBox.style.transform = "translateY("+(box.scrollTop-max+30)+"px)";
                     if (max - 150 <= box.scrollTop){
