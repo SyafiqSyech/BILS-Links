@@ -177,17 +177,22 @@ footer{
     display: grid;
     grid-template-columns: 48px repeat(auto-fill, 48px 48px);
     column-gap: 18px;
-    row-gap: 48px;
+    row-gap: 18px;
     justify-content: space-between;
 }
 
 .pattern{
     z-index: 0;
-    background-color: #f2f2f2;
     width: 48px;
-    height: 12px;
+    height: 48px;
 }
 
-.low{
-    transform: translateY(20px);
+.shape{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 12px;
+    border-radius: 100vw;
+    background-color: rgba(255, 255, 255, 0.2);
 }
